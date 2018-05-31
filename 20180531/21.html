@@ -1,0 +1,24 @@
+<!doctype html> <!--  21.html  -->
+<html>
+<head>
+<meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
+<meta name="viweport"content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet"href="../css/sample.css"/><script src="../fs/sample.js"></script>
+<script>
+function fnGetElementsById(){
+  var access Tag = document.getElementById("input_id1");
+  console.log(accessTag.tagName);
+  accessTag.setAttribute("value","getElementById실행!");
+}
+</script>script><title>웹프로그래밍실습</title></head>
+<body><header><h2>실습 대환영</h2></header>
+<nav><ul><li><a href="https://hive.dju.ac.kr">실습서버</a></li></ul></nav>
+<section id="login">
+<h4>자바스크립트 실행</h4>
+<form id="form_id1"name="form_name1">
+ <input id="input_id1"type="text"name="input_name1"/>
+ <input id="button_id1"type="button"name="user_id"value="입력"/><br/>
+빈칸에 검색어를 넣고 입력해 주세요
+</form>
+<form><input type="button"onclick="fnGetElementsById();"value="변경실행"\></form></section>
+</body></html>
