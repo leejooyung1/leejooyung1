@@ -1,0 +1,91 @@
+<!doctype html>   <!-- funcTest.html -->
+
+<html lang="ko">
+
+  <head>
+
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://p0rta1.github.io/2018-05-02/sample.css"/>
+
+    <title>웹 프로그래밍 실습</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <h2>실습 대환영</h2>
+
+    </header>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="">실습서버</a></li>
+
+      </ul>
+
+    </nav>
+
+    <section>
+
+      <h4>function 예제 실습</h4>
+
+      <script>
+
+        var mnu = window.prompt("점수입력 : ");
+
+        mnu = parseFloat(mnu);
+
+        for (var i in mnu)
+
+        {
+
+          var arrn[i] = window.prompt("점수입력 : ");
+
+          arrn[i] = parseFloat(arrn[i]);
+
+        }
+
+        function sumx()
+
+        {
+
+          var result = 0;
+
+          for ( var i = 0; i < arguments.length; i++)
+
+          {
+
+            result = result + arguments[i];
+
+          }
+
+          return result;
+
+        }
+
+        var value = sumx(arrn);
+
+        document.write("value = ", value, "<br/>");
+
+      </script>
+
+    </section>
+
+    <footer>
+
+      <p>&copy; 2018 Made by Korea. Allrights reserved.</p>
+
+    </footer>
+
+  </body>
+
+</html>
